@@ -1,0 +1,45 @@
+{
+  "bot": {
+    "0": {
+      "content": [
+        "Привіт!",
+        "Я Infiniti - бот сайту <a href=\"http://localhost/hostel/index.php\" target=\"_blank\">http://localhost/control/index.php</a>"
+      ],
+      "human": [0, 1, 2]
+    },
+    "1": { "content": "Я теж радий, як з вами зв'язатися?", "human": [3] },
+    "2": { "content": "Як до вас звертатися?", "human": [3] },
+    "3": { "content": "{{name}}, що вас цікавить?", "human": [4, 5] },
+    "4": {
+      "content": "{{name}}, для цього перейдіть до <a href=\"http://localhost/hostel/subjects.php\" target=\"_blank\">this page</a>. It contains detailed instructions on how to use this chatbot.",
+      "human": [6]
+    },
+    "5": { "content": "{{name}}, яке ваше запитання?", "human": [7] },
+    "6": {
+      "content": "{{name}}, ми отримали ваше запитання! Чи можете ви підказати мені найкращий спосіб зв’язатися з вами?",
+      "human": [8, 9]
+    },
+    "7": { "content": "{{name}}, будь ласка, введіть свій номер телефону", "human": [10] },
+    "8": { "content": "{{name}}, введіть свою електронну адресу нижче", "human": [10] },
+    "9": {
+      "content": "Готово! {{name}}, ми зв'яжемося з вами якомога швидше {{contact}}. Удачі!",
+      "human": [6]
+    }
+  },
+  "human": {
+    "0": { "content": "Привіт! Я радий зустрітися з вами", "bot": 1 },
+    "1": { "content": "Салют!", "bot": 2 },
+    "2": { "content": "Привіт Infiniti!", "bot": 2 },
+    "3": { "content": "", "bot": 3, "name": "name" },
+    "4": {
+      "content": "Мені цікаво, як я можу використовувати цього чат-бота на своєму веб-сайті",
+      "bot": 4
+    },
+    "5": { "content": "Я хочу залишити запит розробнику чат-бота", "bot": 5 },
+    "6": { "content": "До початку", "bot": 3 },
+    "7": { "content": "", "bot": 6, "name": "" },
+    "8": { "content": "телефоном", "bot": 7 },
+    "9": { "content": "email", "bot": 8 },
+    "10": { "content": "", "bot": 9, "name": "contact" }
+  }
+}
